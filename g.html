@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+var n1= prompt("Ingrese resultado primer dado: ");
+var n2= prompt("Ingrese resultado segundo dado: ");
+var n3= prompt("Ingrese resultado tercer dado: ");
+n1=parseInt(n1);
+n2=parseInt(n2);
+n3=parseInt(n3);
+
+if(n1==6 && n2==6 && n3==6){
+    if(n2==n3)
+        document.write('Excelente');
+}
+    else if((n1==6 && n2==6)||(n1==6 && n3==6) || (n2==6 && n3==6)){
+
+      document.write('Muy bien');
+     
+}
+else if((n1==6) || (n2==6) || (n3==6)){
+            document.write('Regular');
+    }
+        else
+        document.write('Pésimo');
+
+</script>
+</body>
+</html>

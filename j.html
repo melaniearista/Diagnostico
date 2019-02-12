@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+var longitud1= prompt("Ingrese longitud 1: ");
+var longitud2= prompt("Ingrese longitud 2: ");
+var longitud3= prompt("Ingrese longitud 3: ");
+longitud1=parseInt(longitud1);
+longitud2=parseInt(longitud2);
+longitud3=parseInt(longitud3);
+var sumadelongitudes1;
+var sumadelongitudes2;
+var sumadelongitudes3;
+
+//if((longitud1>longitud2 && longitud1>longitud3)||(longitud2>longitud1 && longitud2>longitud3)||(longitud3>longitud1 && longitud3>longitud2)){
+  //  sumadelongitudes1=longitud2+longitud3;
+    //sumadelongitudes2=longitud1+longitud3;
+    //sumadelongitudes3=longitud2+longitud3;
+    //if((sumadelongitudes1<longitud1)||(sumadelongitudes2<longitud2)||(sumadelongitudes3<longitud3)){
+        if (longitud1==longitud2 && longitud2==longitud3){ 
+           document.write('Es un triángulo equilátero');
+       }
+       else if (longitud1!=longitud2 && longitud2!=longitud3){
+        document.write('Es un triángulo escaleno');
+    }
+    else
+        document.write('Es un isósceles');
+
+  //  }
+  //  else
+   //     document.write('No es un triángulo');
+       
+//}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+var tornillosdefectuosos= prompt("Ingrese la cantidad de tornillos defectuosos: ");
+var tornillosproducidos= prompt("Ingrese la cantidad de tornillos producidos:: ");
+tornillosdefectuosos=parseInt(tornillosdefectuosos);
+tornillosproducidos=parseInt(tornillosproducidos);
+var sumadelongitudes1;
+var sumadelongitudes2;
+var sumadelongitudes3;
+
+if (tornillosdefectuosos<=200 && tornillosproducidos>=1000) {
+  document.write('Grado 8');
+}
+else if(tornillosdefectuosos>200 && tornillosproducidos>1000){
+     document.write('Grado 7');
+}
+else if(tornillosdefectuosos<200 && tornillosproducidos<1000){
+     document.write('Grado 6');
+}
+else
+document.write('Grado 5');
+</script>
+</body>
+</html>

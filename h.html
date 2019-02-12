@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+
+var recorrido= prompt("Ingrese los kilómetros recorridos");
+var precio=30;
+var impuesto=0;
+var totalapagar=0;
+var totalimpuesto=0;
+var extra=0;
+var pagoextra=0;
+        
+ if(recorrido<=300){
+    impuesto=(precio*18)/100;
+    totalapagar=(precio+impuesto);
+    totalimpuesto=(precio-totalapagar);
+     document.write('Total a pagar: ',totalapagar,' Monto incluido del impuesto: ',totalimpuesto);
+
+ }
+else if(recorrido>300){
+    impuesto=(precio*18)/100;
+    totalimpuesto=(precio-totalapagar);
+    extra=recorrido-300;
+    pagoextra=(extra*0.15);
+    totalapagar=(precio+impuesto+pagoextra);
+     document.write('Total a pagar: ',totalapagar,' Monto incluido del impuesto: ',totalimpuesto);
+}
+else if(recorrido>1000){
+  impuesto=(precio*18)/100;
+    totalimpuesto=(precio-totalapagar);
+    extra=recorrido-1000;
+    pagoextra=(extra*0.10);
+    totalapagar=(precio+impuesto+pagoextra);
+     document.write('Total a pagar: ',totalapagar,' Monto incluido del impuesto: ',totalimpuesto);
+}
+    </script>
+</body>
+</html>

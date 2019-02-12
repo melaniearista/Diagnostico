@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+
+var numerocamisas= prompt("Ingrese el número de camisas");
+var precio=150;
+var totalsindescuento=0;
+var totalcondescuento=0;
+descuento=0;
+
+ if(numerocamisas<=4){
+    totalsindescuento=(precio*numerocamisas);
+    descuento=(totalsindescuento*12.5)/100;
+     totalcondescuento=(totalsindescuento-descuento);
+    montodescuento=(totalsindescuento-totalcondescuento);
+    document.write('Sin descuento: ',totalsindescuento,' Total con descuento: ',totalcondescuento,' Monto del descuento: ',montodescuento);
+    
+}
+else if(numerocamisas<=8){
+    totalsindescuento=(precio*numerocamisas);
+    descuento=(totalsindescuento*20)/100;
+     totalcondescuento=(totalsindescuento-descuento);
+    montodescuento=(totalsindescuento-totalcondescuento);
+    document.write('Sin descuento: ',totalsindescuento,' Total con descuento: ',totalcondescuento,' Monto del descuento: ',montodescuento);
+}
+else if(numerocamisas>8){
+    totalsindescuento=(precio*numerocamisas);
+    descuento=(totalsindescuento*31.5)/100;
+     totalcondescuento=(totalsindescuento-descuento);
+    montodescuento=(totalsindescuento-totalcondescuento);
+    document.write('Sin descuento: ',totalsindescuento,' Total con descuento: ',totalcondescuento,' Monto del descuento: ',montodescuento);
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+var n1= prompt("Ingrese numero 1: ");
+var n2= prompt("Ingrese numero 2: ");
+var n3= prompt("Ingrese numero 3: ");
+n1=parseInt(n1);
+n2=parseInt(n2);
+n3=parseInt(n3);
+
+if(n1==n2){
+    if(n2==n3)
+        document.write('Todos son iguales');
+    
+    else if(n2>n3)
+        document.write('El orden es: ',n1,'-',n2,'-',n3);
+    else
+        document.write('El orden es: ',n3,'-',n1,'-',n2);
+}
+else if(n1==n3){
+    if(n1>n2)
+        document.write('El orden es: ',n1,'-',n3,'-',n2);
+    else
+        document.write('El orden es: ',n2,'-',n1,'-',n3);
+}
+else if(n2==n3){
+    if(n2>n1)
+        document.write('El orden es: ',n2,'-',n3,'-',n1);
+    else
+        document.write('El orden es: ',n1,'-',n2,'-',n3);
+}
+else if((n1>n2)&&(n2>n3))
+    document.write('El orden es: ',n1,'-',n2,'-',n3);
+else if((n1>n3)&&(n3>n2)) 
+    document.write('El orden es: ',n1,'-',n3,'-',n2);
+else if((n2>n1)&&(n1>n3))
+    document.write('El orden es: ',n2,'-',n1,'-',n3);
+else if((n2>n3)&&(n3>n1))
+    document.write('El orden es: ',n2,'-',n3,'-',n1);
+else if((n3>n1)&&(n1>n2))
+    document.write('El orden es: ',n3,'-',n1,'-',n2);
+else if((n3>n2)&&(n2>n1))
+    document.write('El orden es: ',n3,'-',n2,'-',n1);
+</script>
+</body>
+</html>

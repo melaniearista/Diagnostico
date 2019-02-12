@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+
+var horasenelestacionamiento= prompt("Ingrese las horas");
+var minutosenelestacionamiento= prompt("Ingrese los minutos");
+precioxminuto=0.0417;
+horas=parseInt(horasenelestacionamiento);
+minutos=parseInt(minutosenelestacionamiento);
+precioxhoras=0;
+tiempototal=0;
+totalapagar=0;
+horass=0;
+        
+horass=horas*60;
+tiempototal=(horass+minutos);
+totalapagar=(tiempototal*precioxminuto);
+document.write('Total a pagar en el parqueo es: ',totalapagar);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+
+var numerodocenas= prompt("Ingrese el número de docena");
+var precio=2000;
+var totalsindescuento=0;
+var totalcondescuento=0;
+var descuento=0;
+var unidad=0;
+
+ if(numerodocenas<3){
+    totalsindescuento=(precio*numerodocenas);
+    descuento=(totalsindescuento*10)/100;
+     totalcondescuento=(totalsindescuento-descuento);
+    montodescuento=(totalsindescuento-totalcondescuento);
+    document.write('Sin descuento: ',totalsindescuento,' Total con descuento: ',totalcondescuento,' Monto del descuento: ',montodescuento);
+    
+}
+else if(numerodocenas>=3){
+    totalsindescuento=(precio*numerodocenas);
+    descuento=(totalsindescuento*15)/100;
+     totalcondescuento=(totalsindescuento-descuento);
+    montodescuento=(totalsindescuento-totalcondescuento);
+    unidad=numerodocenas-3;
+    document.write('Monto compra: ',totalsindescuento,' Total a pagar: ',totalcondescuento,' Monto del descuento: ',montodescuento,' Unidad de obsequio: ',unidad);
+}
+
+
+    </script>
+</body>
+</html>
